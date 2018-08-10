@@ -15,6 +15,8 @@ section{
 	left: 47%;
 	background-color: #ffa500;
 	position: absolute;
+	animation:medo 3s infinite linear;
+	/*z-index:2;*/
 }
 .telhado{
 	width: 45%;
@@ -26,17 +28,18 @@ section{
 	border-bottom: 90px solid #800000;
 	position: absolute;
 }
-.porta{
+.boca{
 	position: absolute;
-	width: 30%;
+	width: 50%;
 	height: 30%;
 	left: 34%;
 	bottom: 1%;
 	background-color:black;
 	/*transform: rotate(45deg);*/
 	border-radius: 50%;
+	animation: boca 3s infinite linear;
 }
-.janela1{
+.olho1{
 	position: absolute;
 	width: 28%;
 	height: 28%;
@@ -45,9 +48,10 @@ section{
 	background-color:#8B4726;
 	transform: rotate(40deg);
 	border-radius: 100% 0%;
+	animation: olhando 1s infinite linear;
 
 }
-.janela2{
+.olho2{
 	position: absolute;
 	width: 28%;
 	height: 28%;
@@ -56,9 +60,31 @@ section{
 	background-color:#8B4726;
 	transform: rotate(0deg);
 	border-radius: 100% 0%;
+	animation: olhando 1s infinite linear;
 }
 
-
+.sobrancelha1{
+	position: absolute;
+	width: 20%;
+	height: 10%;
+	top: 8%;
+	left:18%;
+	background-color: #000;
+	transform:rotate(40deg);
+	border-radius: 100% 0%;
+	animation: sobrancelha 3s infinite linear;
+}
+.sobrancelha2{
+	position: absolute;
+	width: 20%;
+	height: 10%;
+	top: 8%;
+	right: 18%;
+	background-color: #000;
+	transform:rotate(-15deg);
+	border-radius: 100% 0%;
+	animation: sobrancelha 3s infinite linear;
+}
 .iris1{
 	width: 44px;
 	height: 45px;
@@ -81,4 +107,21 @@ section{
 	position: absolute;
 	width: 100%;
 	height: 100%;
+}
+@keyframes olhando {
+  50% {background: red}
+  40% {transform:translatey (50px)}
+  
+}
+@keyframes medo {
+  50% {background:#8B4726}
+  40% {transform: translatey (-50px)}
+}
+@keyframes boca {
+  10% {background: #fff}
+  90% {transform: translatey (-50px)}
+}
+@keyframes sobrancelha {
+  40% {top: 10%;}
+  20% {top: 10%;}
 }
