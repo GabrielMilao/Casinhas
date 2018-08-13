@@ -31,13 +31,24 @@ section{
 .boca{
 	position: absolute;
 	width: 50%;
-	height: 30%;
-	left: 34%;
-	bottom: 1%;
+	height: 20%;
+	left: 30%;
+	bottom: 8%;
 	background-color:black;
 	/*transform: rotate(45deg);*/
 	border-radius: 50%;
 	animation: boca 3s infinite linear;
+	transform:rotate(-10deg);
+
+}
+.nariz{
+	position: absolute;
+	width: 4%;
+	height: 5%;
+	top: 75%;
+	left: 70%;
+	background-color: black;
+	border-radius: 50%;
 }
 .olho1{
 	position: absolute;
@@ -103,11 +114,7 @@ section{
 	top: 47%;
 	left: 8%;
 }
-/*.ceu{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}*/
+
 .lua {
 	position: absolute;
 	/*z-index: 8;*/
@@ -121,26 +128,35 @@ section{
 	box-shadow: 0px 0px 64px 
 	rgba(158, 230, 254, 19);	
 }
-.estrelas{
-	width: 10px;
-  	height: 1px;
-  	background: transparent;
-  	box-shadow: $shadows-small;
-  	animation: estrelas 50s linear infinite;
-    position: absolute;
-    top: 2000px;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: $shadows-small;
-    
+/*.estrelas{
+	background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+ 	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
 }
-@keyframes estrelas{
-  from{
-    transform: translateY(0px)}
-  to{		
-    transform: translateY(-2000px)}
-   }
+.nuvem{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+	background-size: 1000px 1000px;
+    position: relative;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+
+}*/
+
 
 @keyframes olhando {
   50% {background: red}
